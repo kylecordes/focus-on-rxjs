@@ -1,0 +1,30 @@
+{
+  "name": "@oasisdigital/just-rxjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "del \"dist/src*\" && parcel build src/index.html",
+    "compile": "tsc --noEmit"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@ag-grid-community/client-side-row-model": "^22.1.1",
+    "@ag-grid-community/core": "^22.1.1",
+    "lit-html": "^1.1.2",
+    "lodash-es": "^4.17.15",
+    "materialize-css": "0.100.2",
+    "rxjs": "^6.5.4"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.3",
+    "del-cli": "^3.0.0",
+    "parcel-bundler": "^1.12.4",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^9.0.0",
+    "typescript": "^3.7.5"
+  }
+}

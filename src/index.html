@@ -27,11 +27,6 @@
             style="height: 600px"
             class="ag-theme-material"
           ></div>
-          <employee-list-table-view
-            [list]="filteredList | async"
-            [selectedId]="selectedId | async"
-            (selectId)="selectedId.next($event)"
-          ></employee-list-table-view>
         </div>
       </section>
 

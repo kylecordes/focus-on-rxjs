@@ -30,7 +30,7 @@ export class EmployeeGrid {
 
   private onSelectionChanged() {
     const rows = this.gridOptions.api!.getSelectedRows();
-    if (rows && rows.length == 1) {
+    if (rows && rows.length === 1) {
       this.selectedId.next(rows[0].id);
     } else {
       this.selectedId.next(null);
@@ -38,11 +38,13 @@ export class EmployeeGrid {
   }
 
   constructor(elem: HTMLElement) {
+    // Interesting API shape provided by ag-grid:
+    // tslint:disable:no-unused-expression
     new Grid(elem, this.gridOptions);
   }
 
   setData(data: any) {
-    // ag-grid's way of providing API access is... unusual.
+    // ag-grid's way of providing API access is... also unusual.
     this.gridOptions.api?.setRowData(data);
   }
 }

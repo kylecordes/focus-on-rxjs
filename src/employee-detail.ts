@@ -3,7 +3,7 @@ import { html, render } from 'lit-html';
 import { Employee } from './employee';
 
 // A lit-html template uses the `html` template tag:
-let cardContent = (employee: Employee | undefined) =>
+const cardContent = (employee: Employee | undefined) =>
   html`
     <div class="card-content">
       <div class="card-title">

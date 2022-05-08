@@ -1,4 +1,4 @@
-@import 'materialize-css/dist/css/materialize.css';
+@import 'npm:materialize-css/dist/css/materialize.css';
 
 html {
   color: #212121;

@@ -6,11 +6,9 @@ import { Employee } from './employee';
 const cardContent = (employee: Employee | undefined) =>
   html`
     <div class="card-content">
-      <div class="card-title">
-        ${employee?.first_name} ${employee?.last_name}
-      </div>
+      <div class="card-title">${employee?.firstName} ${employee?.lastName}</div>
       <p>Email: <strong>${employee?.email}</strong></p>
-      <p>Hours Worked: <strong>${employee?.hours_worked}</strong></p>
+      <p>Hours Worked: <strong>${employee?.hoursWorked}</strong></p>
       <p>Hourly Wage: <strong>${employee?.hourly_wage}</strong></p>
     </div>
   `;

@@ -1,8 +1,8 @@
 export interface Employee {
   id: number;
-  first_name: string;
-  last_name: string;
+  firstName: string;
+  lastName: string;
   email: string;
-  hours_worked: number;
+  hoursWorked: number;
   hourly_wage: number;
 }

@@ -5,7 +5,7 @@ import {
   GridOptions,
   ModuleRegistry,
   ColDef,
-  ColGroupDef
+  ColGroupDef,
 } from '@ag-grid-community/core';
 import { ClientSideRowModelModule } from '@ag-grid-community/client-side-row-model';
 
@@ -14,9 +14,9 @@ import { Subject } from 'rxjs';
 ModuleRegistry.register(ClientSideRowModelModule);
 
 const columnDefs: (ColDef | ColGroupDef)[] = [
-  { headerName: 'First name', field: 'first_name', width: 120 },
-  { headerName: 'Last name', field: 'last_name', width: 120 },
-  { headerName: 'Hours', field: 'hours_worked', width: 90 }
+  { headerName: 'First name', field: 'firstName', width: 120 },
+  { headerName: 'Last name', field: 'lastName', width: 120 },
+  { headerName: 'Hours', field: 'hoursWorked', width: 90 },
 ];
 
 export class EmployeeGrid {
@@ -25,7 +25,7 @@ export class EmployeeGrid {
   private gridOptions: GridOptions = {
     columnDefs,
     rowSelection: 'single',
-    onSelectionChanged: this.onSelectionChanged.bind(this)
+    onSelectionChanged: this.onSelectionChanged.bind(this),
   };
 
   private onSelectionChanged() {
